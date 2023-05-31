@@ -17,7 +17,11 @@ function Header() {
             </div>
           </nav>
           <div className="header-text">
+<<<<<<< HEAD
             <h1>YumYum</h1>
+=======
+            <h1>Recipe App using API</h1>
+>>>>>>> 3789b028834ef1ec87ffbfc90227460d4f505a67
             <p>Life is uncertain, eat dessert first!</p>
           </div>
         </div>
