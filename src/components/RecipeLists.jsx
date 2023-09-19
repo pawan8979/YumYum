@@ -21,6 +21,13 @@ function RecipeLists(props) {
     });
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      searchRecipe(searchTerm);
+      props.setLoader(true);
+    }
+  };
+
   return (
     <div className="container">
       <div className="heading-line">
@@ -29,11 +36,15 @@ function RecipeLists(props) {
           <input
             type="text"
             onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyPress={handleKeyPress} 
             value={searchTerm}
             placeholder="Search your recipe here..."
           />
           <button
-            onClick={() => (searchRecipe(searchTerm), props.setLoader(true))}
+            onClick={() => {
+              searchRecipe(searchTerm);
+              props.setLoader(true);
+            }}
           >
             <BsSearch />
           </button>
