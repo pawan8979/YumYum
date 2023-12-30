@@ -27,7 +27,7 @@ pipeline {
         stage("Deploy") {
             steps {
                 echo 'Deploying the Container'
-                sh "docker run --name yumyum-container -d -p 3001:3001 pawan8979/yumyum:latest"
+                sh "docker-compose down && docker-compose up -d"
             }
         }
     }
