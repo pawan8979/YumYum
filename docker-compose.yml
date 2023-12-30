@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-     image : pawan8979/notes-app:latest
+     image : pawan8979/yumyum:latest
      ports :
-         - "8000:8000"
+         - "3001:3001"
