@@ -3,4 +3,4 @@ services :
   web :
      image : pawan8979/yumyum:latest
      ports :
-         - "3001:3001"
+         - "3001:5173"
